@@ -3,9 +3,9 @@ node {
         git 'https://github.com/marlincia/hello.git'
     }
     stage('Build') {
-        sh 'ls -rlth hello'
+        sh 'wc -l helloworld'
     }
     stage('Run') {
-        sh 'cat hello/helloworld'
+        sh 'cat helloworld'
     }    
 }
