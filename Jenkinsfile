@@ -3,7 +3,7 @@ node {
         git 'https://github.com/marlincia/hello.git'
     }
     stage('Build') {
-        sh 'cd hello && ls -rlht'
+        sh 'cd /hello'
     }
     stage('Run') {
         sh 'cat helloworld'
